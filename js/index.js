@@ -42,7 +42,6 @@ function Ball() {
     c.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
     c.fillStyle = this.color;
     c.fill();
-    //c.stroke();
   };
 }
 
@@ -79,17 +78,13 @@ function animate() {
       mousey < bal[i].y + 50 &&
       bal[i].radius < 70
     ) {
-      //bal[i].x += +1;
       bal[i].radius += 5;
     } else {
       if (bal[i].radius > bal[i].startradius) {
         bal[i].radius += -5;
       }
     }
-
-    //forloop end
   }
-  //animation end
 }
 
 animate();
